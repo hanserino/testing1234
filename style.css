@@ -1,16 +1,19 @@
-h1{
-    color: red;
-    font-size: 100px;
+@keyframes backgroundSwitch{
+    0% {
+        background-color: cyan;
+    }
+    100%{
+        background-color: hotpink;
+    }
 }
 
-#special-h1{
-    color: blanchedalmond;
-}
 
-.special-class{
-    color: orchid;
-}
-
-p{
-    color: green;
+body{
+    color: white;
+    animation-name: backgroundSwitch;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
 }
