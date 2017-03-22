@@ -1,0 +1,16 @@
+h1{
+    color: red;
+    font-size: 100px;
+}
+
+#special-h1{
+    color: blanchedalmond;
+}
+
+.special-class{
+    color: orchid;
+}
+
+p{
+    color: green;
+}
