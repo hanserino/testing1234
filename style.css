@@ -1,0 +1,47 @@
+body{
+    font-size: 16px;
+}
+
+nav{
+    border-bottom: 1px solid black;
+}
+
+.nav-inner{
+    max-width: 900px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    width: 200px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo-divider{
+    height: 2rem;
+    width: 1px;
+    background: black;
+    margin: 0 1rem;
+}
+
+.logo-container .logo-item-1{
+    width: 2rem;
+}
+
+.logo-container .logo-item-2{
+    height: 3rem;
+    margin-bottom: -.45rem;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
