@@ -1,9 +1,11 @@
 body{
     font-size: 16px;
+    background: #fafafa;
 }
 
 nav{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
+    background: white;   
 }
 
 .nav-inner{
@@ -17,6 +19,41 @@ nav{
 }
 nav h1{
     width: 200px;
+}
+
+nav ul{ 
+    display: flex;
+}
+
+.search-input{
+    padding: .5rem;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    border-radius: 3px;
+    width: 13.4375rem;
+    outline: none;
+}
+
+.search-input:focus{
+    text-align: left;
+    background: white;
+}
+
+nav .icon{
+    width: 2rem;
+    height: 2rem;
+}
+nav li {
+    margin: 0 0 0 1rem;
+}
+nav li:first-child{
+    margin: 0;
+}
+
+
+nav a {
+    display: block;
 }
 
 .logo-container{
