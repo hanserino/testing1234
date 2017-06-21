@@ -25,9 +25,15 @@ nav ul{
     display: flex;
 }
 
+.search-input-label{
+    position: relative;
+}
+
 .search-input{
-    padding: .5rem;
-    background: #fafafa;
+    padding: .5rem .5rem .5rem 2rem;
+    background: transparent;
+    position: relative;
+    z-index: 2;
     border: 1px solid #dbdbdb;
     text-align: center;
     border-radius: 3px;
@@ -37,10 +43,56 @@ nav ul{
 
 .search-input:focus{
     text-align: left;
+}
+
+.placeholder-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    border: 1px solid black;
+}
+
+.search-icon-magnifying-glass{
+    margin: 0 .5rem 0 -2rem;
+}
+
+.search-input:focus + .placeholder-wrapper{
+    text-align: left;
+    z-index: 1;
+}
+
+.search-input:focus + .placeholder-wrapper .search-icon-magnifying-glass{
+    margin-left: .5rem;
+}
+.search-input:valid + .placeholder-wrapper .placeholder-text{
+    display: none;
+}
+
+.search-icon-x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.search-input-background{
+    background:red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+} 
+
+.search-input:focus ~ .search-background {
     background: white;
 }
 
-nav .icon{
+nav .icon{ 
     width: 2rem;
     height: 2rem;
 }
